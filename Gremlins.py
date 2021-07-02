@@ -172,8 +172,8 @@ class GremlinsHighlighterListener(sublime_plugin.EventListener):
 	def on_load_async(self, view):
 		self.highlight_all_gremlins(view)
 
-	def on_modified_async(self, view):
-		self.highlight_all_gremlins(view)
+	# def on_modified_async(self, view):
+	# 	self.highlight_all_gremlins(view)
 
 # Use the status bar to display the name of the gremlin
 # currently under the user's cursor.
