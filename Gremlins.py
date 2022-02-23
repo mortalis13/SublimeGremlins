@@ -47,7 +47,9 @@ Helpers
 '''
 
 def cursor_position(view):
-	return view.sel()[0].a
+	if view and len(view.sel()):
+		return view.sel()[0].a
+	return 0
 
 def char_at_cursor(view):
 	return view.substr(cursor_position(view))
